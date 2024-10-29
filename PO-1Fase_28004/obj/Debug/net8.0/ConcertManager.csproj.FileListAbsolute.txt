@@ -1,0 +1,12 @@
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\bin\Debug\net8.0\ConcertManager.deps.json
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\bin\Debug\net8.0\ConcertManager.dll
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\bin\Debug\net8.0\ConcertManager.pdb
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ConcertManager.csproj.AssemblyReference.cache
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ConcertManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ConcertManager.AssemblyInfoInputs.cache
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ConcertManager.AssemblyInfo.cs
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ConcertManager.csproj.CoreCompileInputs.cache
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ConcertManager.dll
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\refint\ConcertManager.dll
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ConcertManager.pdb
+C:\Users\diogocarvalhog\source\repos\PO-1Fase_28004\obj\Debug\net8.0\ref\ConcertManager.dll
