@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diogocarvalhog\\source\\repos\\UI\\UI.csproj": {}
+    "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diogocarvalhog\\source\\repos\\UI\\UI.csproj": {
+    "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diogocarvalhog\\source\\repos\\UI\\UI.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\diogocarvalhog\\source\\repos\\UI\\UI.csproj",
+        "projectPath": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\UI.csproj",
         "packagesPath": "C:\\Users\\diogocarvalhog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diogocarvalhog\\source\\repos\\UI\\obj\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

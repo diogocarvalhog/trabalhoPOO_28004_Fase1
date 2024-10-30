@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace UI
 {
     partial class Form1
     {
@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
-            button2 = new Button();
             checkBox1 = new CheckBox();
             linkLabel1 = new LinkLabel();
             label1 = new Label();
@@ -44,32 +43,19 @@
             // button1
             // 
             button1.Font = new Font("Microsoft Sans Serif", 9F);
-            button1.Location = new Point(551, 953);
+            button1.Location = new Point(316, 924);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(147, 97);
+            button1.Size = new Size(296, 97);
             button1.TabIndex = 0;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.AutoSize = true;
-            button2.Font = new Font("Microsoft Sans Serif", 9F);
-            button2.Location = new Point(756, 953);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(147, 97);
-            button2.TabIndex = 1;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(690, 815);
+            checkBox1.Location = new Point(518, 807);
             checkBox1.Margin = new Padding(3, 4, 3, 4);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(208, 36);
@@ -82,7 +68,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft Sans Serif", 9F);
-            linkLabel1.Location = new Point(746, 1161);
+            linkLabel1.Location = new Point(379, 1085);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(176, 29);
             linkLabel1.TabIndex = 3;
@@ -115,7 +101,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(312, 57);
+            pictureBox1.Location = new Point(253, 68);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(449, 431);
@@ -125,7 +111,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(551, 620);
+            txtEmail.Location = new Point(379, 612);
             txtEmail.Margin = new Padding(3, 4, 3, 4);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(352, 39);
@@ -133,7 +119,7 @@
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(551, 728);
+            txtPass.Location = new Point(379, 720);
             txtPass.Margin = new Padding(3, 4, 3, 4);
             txtPass.Name = "txtPass";
             txtPass.PasswordChar = '*';
@@ -147,7 +133,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.PapayaWhip;
-            ClientSize = new Size(1118, 1236);
+            ClientSize = new Size(941, 1179);
             Controls.Add(txtPass);
             Controls.Add(txtEmail);
             Controls.Add(pictureBox1);
@@ -155,7 +141,6 @@
             Controls.Add(label1);
             Controls.Add(linkLabel1);
             Controls.Add(checkBox1);
-            Controls.Add(button2);
             Controls.Add(button1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
@@ -169,7 +154,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label1;

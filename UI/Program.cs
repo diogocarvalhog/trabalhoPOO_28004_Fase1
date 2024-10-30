@@ -1,5 +1,5 @@
 
-namespace WindowsFormsApp1
+namespace UI
 {
     internal static class Program
     {

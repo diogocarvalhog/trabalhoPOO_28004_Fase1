@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\diogocarvalhog\\source\\repos\\PO-1Fase_28004\\ConcertManager.csproj": {}
+    "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\ConcertManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\diogocarvalhog\\source\\repos\\PO-1Fase_28004\\ConcertManager.csproj": {
+    "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\ConcertManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\diogocarvalhog\\source\\repos\\PO-1Fase_28004\\ConcertManager.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\ConcertManager.csproj",
         "projectName": "ConcertManager",
-        "projectPath": "C:\\Users\\diogocarvalhog\\source\\repos\\PO-1Fase_28004\\ConcertManager.csproj",
+        "projectPath": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\ConcertManager.csproj",
         "packagesPath": "C:\\Users\\diogocarvalhog\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\diogocarvalhog\\source\\repos\\PO-1Fase_28004\\obj\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
