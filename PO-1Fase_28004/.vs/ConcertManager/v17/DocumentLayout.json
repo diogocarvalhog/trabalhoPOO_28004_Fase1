@@ -3,22 +3,25 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -31,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,19 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.cs",
-              "RelativeDocumentMoniker": "..\\UI\\Form2.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.cs",
-              "RelativeToolTip": "..\\UI\\Form2.cs",
-              "ViewState": "AgIAABkAAADgmZmZmbkywDAAAAAVAAAAAAAAAA==",
+              "Title": "Form3.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form3.cs",
+              "RelativeDocumentMoniker": "..\\UI\\Form3.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form3.cs",
+              "RelativeToolTip": "..\\UI\\Form3.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAEwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T23:28:34.176Z",
+              "WhenOpened": "2024-10-31T20:45:52.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Program.cs",
               "RelativeDocumentMoniker": "..\\UI\\Program.cs",
@@ -85,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form1.cs",
               "RelativeDocumentMoniker": "..\\UI\\Form1.cs",
               "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form1.cs",
               "RelativeToolTip": "..\\UI\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwFYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T19:00:32.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form1.cs",
               "RelativeDocumentMoniker": "..\\UI\\Form1.cs",
@@ -110,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form3.cs",
               "RelativeDocumentMoniker": "..\\UI\\Form3.cs",
@@ -123,6 +126,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.cs",
+              "RelativeDocumentMoniker": "..\\UI\\Form2.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.cs",
+              "RelativeToolTip": "..\\UI\\Form2.cs",
+              "ViewState": "AgIAACwAAAAANDMzM7MVwDAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:28:34.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "..\\UI\\Form1.Designer.cs",
