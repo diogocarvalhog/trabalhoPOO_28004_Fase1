@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -69,6 +70,21 @@ namespace UI
             Form2 signup = new Form2();
             signup.Show();
 
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+         
+          // URL to open
+          string url = "https://www.youtube.com/watch?v=xm3YgoEiEDc&t=1s";
+
+          // Open the URL in the default web browser
+          Process.Start(new ProcessStartInfo
+          {
+              FileName = url,
+              UseShellExecute = true // Important for opening URLs
+          });
+         
         }
     }
 }

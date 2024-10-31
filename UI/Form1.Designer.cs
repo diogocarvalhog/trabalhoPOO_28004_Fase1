@@ -37,6 +37,7 @@
             pictureBox1 = new PictureBox();
             txtEmail = new TextBox();
             txtPass = new TextBox();
+            linkLabel2 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -127,6 +128,17 @@
             txtPass.TabIndex = 8;
             txtPass.TextChanged += textBox2_TextChanged;
             // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Location = new Point(729, 1138);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(200, 32);
+            linkLabel2.TabIndex = 9;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "if ur feeling lucky";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
             // Form1
             // 
             AcceptButton = button1;
@@ -135,6 +147,7 @@
             AutoSize = true;
             BackColor = Color.PapayaWhip;
             ClientSize = new Size(941, 1179);
+            Controls.Add(linkLabel2);
             Controls.Add(txtPass);
             Controls.Add(txtEmail);
             Controls.Add(pictureBox1);
@@ -162,6 +175,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPass;
+        private LinkLabel linkLabel2;
     }
 }
 

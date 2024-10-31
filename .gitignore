@@ -1,3 +1,7 @@
 
 /PO-1Fase_28004/.vs
 /PO-1Fase_28004/.vs
+*.json
+*.db-shm
+*.db-shm
+*.db-wal
