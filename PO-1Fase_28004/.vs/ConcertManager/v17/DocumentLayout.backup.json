@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -31,15 +31,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.cs",
               "RelativeDocumentMoniker": "..\\UI\\Form2.cs",
@@ -52,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Program.cs",
               "RelativeDocumentMoniker": "..\\UI\\Program.cs",
