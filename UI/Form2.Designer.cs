@@ -121,6 +121,7 @@
             // 
             // Form2
             // 
+            AcceptButton = button1;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;

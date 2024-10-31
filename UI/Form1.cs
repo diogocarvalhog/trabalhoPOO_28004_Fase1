@@ -33,7 +33,7 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source = 192.168.1.87; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True");
+            SqlConnection con = new SqlConnection("Data Source = 172.16.15.173; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True");
             con.Open();
             string query = "SELECT COUNT(*) from loginapp WHERE email=@email AND password=@password";
             SqlCommand cmd = new SqlCommand(query, con);
@@ -44,13 +44,14 @@ namespace UI
             if (count > 0)
             {
                 MessageBox.Show("Login Successful", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+                Form3 concerts = new Form3();
+                concerts.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Login Failed", "info", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
