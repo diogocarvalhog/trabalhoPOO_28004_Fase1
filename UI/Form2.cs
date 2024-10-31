@@ -26,6 +26,13 @@ namespace UI
         private void button1_Click(object sender, EventArgs e)
 
         {
+           
+            if (textBox2.Text != textBox3.Text)
+            {
+                MessageBox.Show("Passwords do not match. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Exit the method if passwords do not match
+            }
+
             using (SqlConnection con = new SqlConnection("Data Source = 192.168.1.87; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True"))
             {
                 try
@@ -76,6 +83,12 @@ namespace UI
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             textBox2.PasswordChar = checkBox1.Checked ? '\0' : '*';
+            textBox3.PasswordChar = checkBox1.Checked ? '\0' : '*';
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
