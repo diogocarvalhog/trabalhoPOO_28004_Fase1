@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConcertManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9902f1aa29cc997c1737b4158bed02625dfaba72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ca74dd3bcbdd60492cf6c9bdc00974a8031c66")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConcertManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConcertManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

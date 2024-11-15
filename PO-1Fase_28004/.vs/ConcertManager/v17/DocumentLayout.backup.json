@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B571C12-F6C7-4074-954A-1C1739392570}|..\\UI\\UI.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\ui\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3449A321-DD2A-49B9-BB9B-8AC8ECFFAF2E}|ConcertManager.csproj|\\\\mac\\home\\documents\\github\\trabalhopoo_28004_fase1\\po-1fase_28004\\bands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,45 +25,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Bands.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Bands.cs",
-              "RelativeDocumentMoniker": "Bands.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Bands.cs",
-              "RelativeToolTip": "Bands.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:06:18.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Concerts.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Concerts.cs",
-              "RelativeDocumentMoniker": "Concerts.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Concerts.cs",
-              "RelativeToolTip": "Concerts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAlAAAAAAAAAA==",
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "..\\UI\\Form2.Designer.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.Designer.cs",
+              "RelativeToolTip": "..\\UI\\Form2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:03:48.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Stages.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Stages.cs",
-              "RelativeDocumentMoniker": "Stages.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Stages.cs",
-              "RelativeToolTip": "Stages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:50:00.903Z",
+              "WhenOpened": "2024-11-15T14:51:53.195Z",
               "EditorCaption": ""
             },
             {
@@ -71,6 +51,57 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.cs",
+              "RelativeDocumentMoniker": "..\\UI\\Form2.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\UI\\Form2.cs [Design]",
+              "RelativeToolTip": "..\\UI\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:05:19.29Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bands.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Bands.cs",
+              "RelativeDocumentMoniker": "Bands.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Bands.cs*",
+              "RelativeToolTip": "Bands.cs*",
+              "ViewState": "AgIAABkAAAAAy8zMzMwDwA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T11:06:18.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Concerts.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Concerts.cs",
+              "RelativeDocumentMoniker": "Concerts.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Concerts.cs",
+              "RelativeToolTip": "Concerts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T11:03:48.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Stages.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Stages.cs",
+              "RelativeDocumentMoniker": "Stages.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\Github\\trabalhoPOO_28004_Fase1\\PO-1Fase_28004\\Stages.cs",
+              "RelativeToolTip": "Stages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:50:00.903Z",
+              "EditorCaption": ""
             }
           ]
         }

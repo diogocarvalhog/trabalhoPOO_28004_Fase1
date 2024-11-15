@@ -7,7 +7,7 @@ This code is free and open for anyone to use, modify, share, or improve without 
 
 Brief: Create a class named Bands that inherits from Concerts. This class will have a band name, genre, and members property.
 
- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 using System; 
 using ConcertManager;
