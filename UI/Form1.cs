@@ -34,7 +34,7 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source = 172.16.15.173; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True");
+            SqlConnection con = new SqlConnection("Data Source = 192.168.1.193; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True");
             con.Open();
             string query = "SELECT COUNT(*) from loginapp WHERE email=@email AND password=@password";
             SqlCommand cmd = new SqlCommand(query, con);

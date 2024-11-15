@@ -33,7 +33,7 @@ namespace UI
                 return; // Exit the method if passwords do not match
             }
 
-            using (SqlConnection con = new SqlConnection("Data Source = 172.16.15.173; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True"))
+            using (SqlConnection con = new SqlConnection("Data Source = 192.168.1.193; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True"))
             {
                 try
                 {
