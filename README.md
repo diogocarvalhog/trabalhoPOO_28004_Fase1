@@ -1,4 +1,3 @@
-# trabalhoPOO_28004_Fase1
 # Trabalho POO - Fase 1
 
 Este repositório contém o projeto da Fase 1 da disciplina de Programação Orientada a Objetos (POO).
