@@ -1,6 +1,6 @@
 ﻿namespace UI
 {
-    partial class Form2
+    partial class CreateACC
     {
         /// <summary>
         /// Required designer variable.

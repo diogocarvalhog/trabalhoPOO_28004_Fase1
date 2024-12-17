@@ -22,12 +22,14 @@ namespace ConcertManager
     {
         private string Name { get; set; }
         private string Date { get; set; }
+        private double Price { get; set; }
 
         // Create a constructor that takes in location, capacity, name, and date
-        public Concerts(string location, int capacity, string name, string date) : base(location, capacity)
+        public Concerts(string location, int capacity, string name, string date, double price) : base(location, capacity)
         {
             this.Name = name;
             this.Date = date;
+            this.Price = price;
         }
 
         // Create a property for name
@@ -42,6 +44,11 @@ namespace ConcertManager
         {
             get { return this.Date; }
             set { this.Date = value; }
+        }
+        public double price
+        {
+            get { return this.Price; }
+            set { this.Price = value; }
         }
     }
 }

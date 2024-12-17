@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class Form2 : Form
+    public partial class CreateACC : Form
     {
-        public Form2()
+        public CreateACC()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace UI
                 return; // Exit the method if passwords do not match
             }
 
-            using (SqlConnection con = new SqlConnection("Data Source = 192.168.1.193; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True"))
+            using (SqlConnection con = new SqlConnection("Data Source = 192.168.1.95; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True"))
             {
                 try
                 {

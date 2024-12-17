@@ -28,31 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            linkLabel1 = new LinkLabel();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
-            // linkLabel1
+            // comboBox1
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(1469, 812);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(0, 32);
-            linkLabel1.TabIndex = 1;
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(89, 555);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(242, 40);
+            comboBox1.TabIndex = 0;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(89, 728);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(242, 40);
+            comboBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(89, 488);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 39);
+            textBox1.TabIndex = 2;
+            textBox1.Text = "Band";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(89, 664);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(200, 39);
+            textBox2.TabIndex = 3;
+            textBox2.Text = "Date and Price";
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1591, 947);
-            Controls.Add(linkLabel1);
+            BackColor = Color.PapayaWhip;
+            ClientSize = new Size(1350, 1126);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
             Name = "Form3";
             Text = "Form3";
+            Load += Form3_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private LinkLabel linkLabel1;
+
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

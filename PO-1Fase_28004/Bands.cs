@@ -9,7 +9,7 @@ Brief: Create a class named Bands that inherits from Concerts. This class will h
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-using System; 
+using System;
 using ConcertManager;
 using System;
 using System.Collections.Generic;
@@ -19,19 +19,21 @@ using System.Threading.Tasks;
 
 namespace ConcertManager
 {
-        // Create a class called Bands that inherits from Concerts
-        public class Bands : Concerts
-        {
+    // Create a class called Bands that inherits from Concerts
+    public class Bands
+    {
         private string BandName { get; set; }
         private string Genre { get; set; }
         private string Members { get; set; }
+        private List<Concerts> Concerts { get; set; }
 
         // Create a constructor that takes in location, capacity, name, date, bandName, bandGenre, and bandMembers
-        public Bands(string location, int capacity, string name, string date, string bandName, string bandGenre, string bandMembers) : base(location, capacity, name, date)
+        public Bands(string bandName, string bandGenre, string bandMembers)
         {
             this.BandName = bandName;
-            this.Genre = bandGenre; 
+            this.Genre = bandGenre;
             this.Members = bandMembers;
+            this.Concerts = new List<Concerts>();
         }
 
         // Create a property for bandName
@@ -53,6 +55,25 @@ namespace ConcertManager
         {
             get { return this.Members; }
             set { this.Members = value; }
+        }
+        public List<Concerts> concerts
+        {
+            get { return this.Concerts; }
+        }
+
+        public void AddConcert(Concerts concert)
+        {
+            if (concert != null)
+            {
+                this.Concerts.Add(concert);
+            }
+        }
+        public void RemoveConcert(Concerts concert)
+        {
+            if (concert != null && this.Concerts.Contains(concert))
+            {
+                this.Concerts.Remove(concert);
+            }
         }
     }
 }

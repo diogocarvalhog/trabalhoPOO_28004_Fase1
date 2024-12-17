@@ -1,6 +1,6 @@
 ﻿namespace UI
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             button1 = new Button();
             checkBox1 = new CheckBox();
             linkLabel1 = new LinkLabel();

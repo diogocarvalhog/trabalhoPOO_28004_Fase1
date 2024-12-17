@@ -16,9 +16,9 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace UI
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source = 192.168.1.193; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True");
+            SqlConnection con = new SqlConnection("Data Source = 192.168.1.95; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True");
             con.Open();
             string query = "SELECT COUNT(*) from loginapp WHERE email=@email AND password=@password";
             SqlCommand cmd = new SqlCommand(query, con);
@@ -67,7 +67,7 @@ namespace UI
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 signup = new Form2();
+            CreateACC signup = new CreateACC();
             signup.Show();
 
         }
