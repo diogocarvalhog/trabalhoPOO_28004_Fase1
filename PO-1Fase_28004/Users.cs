@@ -18,24 +18,29 @@ using System.Threading.Tasks;
 namespace ConcertManager
 {
     public class Users
-    {
-        private string name { get; set; }           // User's name
+    {         
+        private string email { get; set; }           // User's email
+        private string password { get; set; }       // User's password
         private int idUser { get; set; }            // Unique user ID
         private List<Bands> Tickets { get; set; }   // List of user's tickets
 
-        public Users(string Name, int IdUser)       // Constructor to initialize the user
+        public Users(string Name, int IdUser, string Email, string Password)       // Constructor to initialize the user
         {
-            this.name = Name;
             this.idUser = IdUser;
             this.Tickets = new List<Bands>();
+            this.email = Email;
+            this.password = Password;
         }
-
-        public string Name                          // Property to get/set the name
+        public string Email
         {
-            get { return this.name; }
-            set { this.name = value; }
+            get { return this.email; }
+            set { this.email = value; }
         }
-
+        public string Password
+        {
+            get { return this.password; }
+            set { this.password = value; }
+        }
         public int IdUser                           // Property to get the user ID (read-only)
         {
             get { return this.idUser; }

@@ -43,6 +43,7 @@
             checkBox8 = new CheckBox();
             checkBox9 = new CheckBox();
             textBox4 = new TextBox();
+            btnReturnToMainMenu = new Button();
             SuspendLayout();
             // 
             // comboBox1
@@ -56,7 +57,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(73, 367);
+            comboBox2.Location = new Point(73, 305);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(285, 40);
             comboBox2.TabIndex = 1;
@@ -71,7 +72,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(73, 301);
+            textBox2.Location = new Point(73, 239);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(200, 39);
             textBox2.TabIndex = 3;
@@ -193,12 +194,22 @@
             textBox4.TabIndex = 24;
             textBox4.Text = "Stage";
             // 
+            // btnReturnToMainMenu
+            // 
+            btnReturnToMainMenu.Location = new Point(73, 451);
+            btnReturnToMainMenu.Name = "btnReturnToMainMenu";
+            btnReturnToMainMenu.Size = new Size(150, 49);
+            btnReturnToMainMenu.TabIndex = 25;
+            btnReturnToMainMenu.Text = "Back";
+            btnReturnToMainMenu.UseVisualStyleBackColor = true;
+            // 
             // BuyTickets
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
             ClientSize = new Size(1306, 531);
+            Controls.Add(btnReturnToMainMenu);
             Controls.Add(textBox4);
             Controls.Add(checkBox9);
             Controls.Add(checkBox8);
@@ -217,7 +228,6 @@
             Controls.Add(comboBox1);
             Name = "BuyTickets";
             Text = "Buy Tickets";
-            Load += Form3_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -240,5 +250,6 @@
         private CheckBox checkBox8;
         private CheckBox checkBox9;
         private TextBox textBox4;
+        private Button btnReturnToMainMenu;
     }
 }

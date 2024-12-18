@@ -53,6 +53,7 @@ namespace UI
 
                 // Instead of BuyTickets, show the MainMenuForm
                 MainMenu mainMenu = new MainMenu();
+                mainMenu.StartPosition = FormStartPosition.CenterScreen;
                 mainMenu.Show();
                 this.Hide();
             }

@@ -6,13 +6,21 @@ public class Concerts : Stages
     private string Name { get; set; }
     private string Date { get; set; }
     private double Price { get; set; }
+    private string BandName { get; set; }
 
-    public Concerts(string location, int capacity, string name, int concertID, string date, double price): base(location, capacity)
+    public Concerts(string location, int capacity, string name, int concertID, string date, double price, string bandName) : base(location, capacity)
     {
         this.ConcertID = concertID;
         this.Name = name;
         this.Date = date;
         this.Price = price;
+        this.BandName = bandName;
+    }
+
+    public string bandName
+    {
+        get { return this.BandName; }
+        set { this.BandName = value; }
     }
 
     // Property for ConcertID

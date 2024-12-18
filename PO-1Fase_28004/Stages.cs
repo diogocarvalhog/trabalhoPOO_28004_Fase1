@@ -11,7 +11,7 @@ Brief: Class that creates a stage object with location and capacity. With the ne
 namespace ConcertManager
     {
     // Create a class called Stages
-    public class Stages
+    public abstract class Stages
         {
             // Create private fields for location and capacity
             private string Location { get; set; }

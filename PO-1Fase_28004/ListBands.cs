@@ -1,35 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-namespace ConcertManager
-{
-    public class ListBands
+    namespace ConcertManager
     {
-        private List<Bands> bandsList;
-        public ListBands()
+        public class ListBands
         {
-            this.bandsList = new List<Bands>();
-        }
-        public List<Bands> BandsList
-        {
-            get { return this.bandsList; }
-        }
-        public void AddBand(Bands band)
-        {
-            if (band != null)
+            private List<Bands> bandsList;
+            public ListBands()
             {
-                this.bandsList.Add(band);
+                this.bandsList = new List<Bands>();
             }
-        }
-        public void RemoveBand(Bands band)
-        {
-            if (band != null && this.bandsList.Contains(band))
+            public List<Bands> BandsList
             {
-                this.bandsList.Remove(band);
+                get { return this.bandsList; }
+            }
+            public void AddBand(Bands band)
+            {
+                if (band != null)
+                {
+                    this.bandsList.Add(band);
+                }
+            }
+            public void RemoveBand(Bands band)
+            {
+                if (band != null && this.bandsList.Contains(band))
+                {
+                    this.bandsList.Remove(band);
+                }
             }
         }
     }
-}
