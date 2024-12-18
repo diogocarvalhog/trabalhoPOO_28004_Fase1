@@ -216,5 +216,10 @@ namespace UI
             this.Close();          // Close the current form
             mainMenuForm.Show();   // Show the Main Menu form
         }
+
+        private void BuyTickets_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

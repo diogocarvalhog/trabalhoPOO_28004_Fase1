@@ -12,9 +12,10 @@ namespace UI
         {
             InitializeComponent();
             btnBack.Click += btnBack_Click;
+            LoadUserTickets();
         }
 
-        private void ViewTickets_Load(object sender, EventArgs e)
+        private void ViewTickets_Load()
         {
             // Setup columns before loading data
             InitializeDataGridView();
@@ -66,6 +67,7 @@ namespace UI
 
                 // Bind the DataTable to the DataGridView
                 dgvTickets.DataSource = dt;
+                Controls.Add(dgvTickets);
             }
             catch (Exception ex)
             {
@@ -94,6 +96,11 @@ namespace UI
         }
 
         private void ViewTickets_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
         {
 
         }

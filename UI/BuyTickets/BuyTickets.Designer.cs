@@ -228,6 +228,7 @@
             Controls.Add(comboBox1);
             Name = "BuyTickets";
             Text = "Buy Tickets";
+            Load += BuyTickets_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
