@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.Identity.Client;
 using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,13 @@ using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
+
+
 namespace UI
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
             InitializeComponent();
@@ -34,19 +38,22 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source = 192.168.1.95; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True");
-            con.Open();
-            string query = "SELECT COUNT(*) from loginapp WHERE email=@email AND password=@password";
+            LoginVariables.email = txtEmail.Text;
+            SqlConnection con = SqlConnectionHelper.GetConnection();
+            string query = "SELECT COUNT(*) from clients WHERE email=@email AND password=@password";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@email", txtEmail.Text);
             cmd.Parameters.AddWithValue("@password", txtPass.Text);
             int count = Convert.ToInt32(cmd.ExecuteScalar());
             con.Close();
+
             if (count > 0)
             {
                 MessageBox.Show("Login Successful", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Form3 concerts = new Form3();
-                concerts.Show();
+
+                // Instead of BuyTickets, show the MainMenuForm
+                MainMenu mainMenu = new MainMenu();
+                mainMenu.Show();
                 this.Hide();
             }
             else

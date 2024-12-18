@@ -33,14 +33,14 @@ namespace UI
                 return; // Exit the method if passwords do not match
             }
 
-            using (SqlConnection con = new SqlConnection("Data Source = 192.168.1.95; Initial Catalog = logindata; Persist Security Info = True; User ID = teste; Password = 123321; TrustServerCertificate = True"))
+            using (SqlConnection con = SqlConnectionHelper.GetConnection())
             {
                 try
                 {
                     con.Open();
 
                     // Check if email already exists
-                    string checkUserQuery = "SELECT COUNT(*) FROM loginapp WHERE email=@Email";
+                    string checkUserQuery = "SELECT COUNT(*) FROM clients WHERE email=@Email";
                     SqlCommand checkCmd = new SqlCommand(checkUserQuery, con);
                     checkCmd.Parameters.AddWithValue("@Email", textBox1.Text);
                     int userExists = Convert.ToInt32(checkCmd.ExecuteScalar());
