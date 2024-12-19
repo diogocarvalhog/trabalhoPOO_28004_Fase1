@@ -184,6 +184,8 @@ namespace UI
                     if (seatIndex >= 0 && seatIndex < seats.Length)
                     {
                         seats[seatIndex].Enabled = false; // Disable booked seats
+                        seats[seatIndex].Checked = true;
+
                     }
                 }
             }

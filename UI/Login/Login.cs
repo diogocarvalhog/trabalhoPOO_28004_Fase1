@@ -21,7 +21,7 @@ namespace UI
 {
     public partial class Login : Form
     {
-        
+
         public Login()
         {
             InitializeComponent();
@@ -78,21 +78,6 @@ namespace UI
             CreateACC signup = new CreateACC();
             signup.Show();
 
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-         
-          // URL to open
-          string url = "https://www.youtube.com/watch?v=xm3YgoEiEDc&t=1s";
-
-          // Open the URL in the default web browser
-          Process.Start(new ProcessStartInfo
-          {
-              FileName = url,
-              UseShellExecute = true // Important for opening URLs
-          });
-         
         }
     }
 }
