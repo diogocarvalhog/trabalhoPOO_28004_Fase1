@@ -26,7 +26,7 @@ namespace UI
         private void button1_Click(object sender, EventArgs e)
 
         {
-           
+
             if (textBox2.Text != textBox3.Text)
             {
                 MessageBox.Show("Passwords do not match. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -37,7 +37,6 @@ namespace UI
             {
                 try
                 {
-                    con.Open();
 
                     // Check if email already exists
                     string checkUserQuery = "SELECT COUNT(*) FROM clients WHERE email=@Email";
@@ -52,7 +51,7 @@ namespace UI
                     }
 
                     // Insert new user
-                    string insertQuery = "INSERT INTO loginapp (email, password) VALUES (@Email, @Password)";
+                    string insertQuery = "INSERT INTO Clients (email, password) VALUES (@Email, @Password)";
                     SqlCommand insertCmd = new SqlCommand(insertQuery, con);
                     insertCmd.Parameters.AddWithValue("@Email", textBox1.Text);
                     insertCmd.Parameters.AddWithValue("@Password", textBox2.Text);
@@ -87,6 +86,11 @@ namespace UI
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateACC_Load(object sender, EventArgs e)
         {
 
         }

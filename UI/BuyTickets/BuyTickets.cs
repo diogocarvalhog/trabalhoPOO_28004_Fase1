@@ -18,6 +18,7 @@ namespace UI
 
             currentUser = user; // Assign the current user
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             btnReturnToMainMenu.Click += btnReturnToMainMenu_Click;
         }
 
@@ -54,10 +55,7 @@ namespace UI
             }
         }
 
-        /// <summary>
-        /// Load concerts for a specific band
-        /// </summary>
-        /// <param name="band"></param>
+        // Load concerts for a specific band
         private void LoadConcertsForBand(Bands band)
         {
             string queryConcerts = "SELECT ConcertID, ConcertName, ConcertDate, Price FROM Concerts WHERE BandName = @BandName";
@@ -100,6 +98,25 @@ namespace UI
                     }
                 }
             }
+
+            if (comboBox2.Items.Count > 0)
+            {
+                comboBox2.SelectedIndex = 0; // Default to the first concert
+            }
+        }
+
+        // Event: When concert selection changes, update seat availability
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int concertID = GetSelectedConcertID();
+                UpdateSeatAvailability(concertID); // Disable booked seats
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
         }
 
         // Find the selected ConcertID from the in-memory data
@@ -129,28 +146,69 @@ namespace UI
             throw new Exception("Concert not found in memory!");
         }
 
-        // Confirm booking and update tickets
+        // Update the checkboxes to reflect seat availability
+        private void UpdateSeatAvailability(int concertID)
+        {
+            CheckBox[] seats = new CheckBox[]
+            {
+                checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6, checkBox7, checkBox8, checkBox9
+            };
+
+            // Reset checkboxes: enable and uncheck them
+            foreach (var seat in seats)
+            {
+                seat.Enabled = true;
+                seat.Checked = false;
+            }
+
+            string query = "SELECT TicketID FROM Tickets WHERE ConcertID = @ConcertID AND IsAvailable = 0";
+
+            using (SqlConnection con = SqlConnectionHelper.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@ConcertID", concertID);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                List<int> bookedTickets = new List<int>();
+
+                while (reader.Read())
+                {
+                    bookedTickets.Add((int)reader["TicketID"]);
+                }
+
+                int baseTicketID = (concertID - 1) * 9;
+
+                foreach (int bookedTicketID in bookedTickets)
+                {
+                    int seatIndex = (bookedTicketID - baseTicketID) - 1;
+                    if (seatIndex >= 0 && seatIndex < seats.Length)
+                    {
+                        seats[seatIndex].Enabled = false; // Disable booked seats
+                    }
+                }
+            }
+        }
+
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             try
             {
                 int clientID = currentUser.IdUser; // User ID
-                int concertID = GetSelectedConcertID(); // Get selected ConcertID
+                int concertID = GetSelectedConcertID();
                 List<int> selectedTickets = new List<int>();
 
-                // Array of checkboxes representing seats
                 CheckBox[] seats = new CheckBox[]
                 {
                     checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6, checkBox7, checkBox8, checkBox9
                 };
 
-                int baseTicketID = (concertID - 1) * 9; // Calculate the base TicketID for the selected concert
+                int baseTicketID = (concertID - 1) * 9;
 
                 for (int i = 0; i < seats.Length; i++)
                 {
                     if (seats[i].Enabled && seats[i].Checked)
                     {
-                        int ticketID = baseTicketID + (i + 1); // Calculate the actual TicketID
+                        int ticketID = baseTicketID + (i + 1);
                         selectedTickets.Add(ticketID);
                     }
                 }
@@ -170,7 +228,6 @@ namespace UI
             }
         }
 
-        // Update the database to book tickets
         private void BookTickets(int clientID, int concertID, List<int> tickets)
         {
             using (SqlConnection con = SqlConnectionHelper.GetConnection())
@@ -198,6 +255,7 @@ namespace UI
 
                     transaction.Commit();
                     MessageBox.Show("Tickets booked successfully!");
+                    UpdateSeatAvailability(concertID); // Refresh seats
                 }
                 catch (Exception ex)
                 {
@@ -206,17 +264,14 @@ namespace UI
                 }
             }
         }
+
         private void btnReturnToMainMenu_Click(object sender, EventArgs e)
         {
-            // Create an instance of the main menu form (assuming it's called MainMenuForm)
             MainMenu mainMenuForm = new MainMenu();
             mainMenuForm.StartPosition = FormStartPosition.CenterScreen;
-
-            // Close the current form
-            this.Close();          // Close the current form
-            mainMenuForm.Show();   // Show the Main Menu form
+            this.Close();
+            mainMenuForm.Show();
         }
-
         private void BuyTickets_Load_1(object sender, EventArgs e)
         {
 

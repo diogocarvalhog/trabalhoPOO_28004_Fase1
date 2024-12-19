@@ -29,11 +29,12 @@
         {
             btnViewTickets = new Button();
             btnBuyTickets = new Button();
+            btnQuit = new Button();
             SuspendLayout();
             // 
             // btnViewTickets
             // 
-            btnViewTickets.Location = new Point(175, 178);
+            btnViewTickets.Location = new Point(175, 117);
             btnViewTickets.Margin = new Padding(5, 6, 5, 6);
             btnViewTickets.Name = "btnViewTickets";
             btnViewTickets.Size = new Size(244, 100);
@@ -44,7 +45,7 @@
             // 
             // btnBuyTickets
             // 
-            btnBuyTickets.Location = new Point(175, 407);
+            btnBuyTickets.Location = new Point(175, 290);
             btnBuyTickets.Margin = new Padding(5, 6, 5, 6);
             btnBuyTickets.Name = "btnBuyTickets";
             btnBuyTickets.Size = new Size(244, 100);
@@ -53,12 +54,23 @@
             btnBuyTickets.UseVisualStyleBackColor = true;
             btnBuyTickets.Click += btnBuyTickets_Click;
             // 
+            // btnQuit
+            // 
+            btnQuit.Location = new Point(175, 464);
+            btnQuit.Name = "btnQuit";
+            btnQuit.Size = new Size(244, 94);
+            btnQuit.TabIndex = 2;
+            btnQuit.Text = "Quit App";
+            btnQuit.UseVisualStyleBackColor = true;
+            btnQuit.Click += button1_Click;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
             ClientSize = new Size(607, 668);
+            Controls.Add(btnQuit);
             Controls.Add(btnBuyTickets);
             Controls.Add(btnViewTickets);
             Margin = new Padding(5, 6, 5, 6);
@@ -72,5 +84,6 @@
 
         private System.Windows.Forms.Button btnViewTickets;
         private System.Windows.Forms.Button btnBuyTickets;
+        private Button btnQuit;
     }
 }

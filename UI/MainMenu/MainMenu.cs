@@ -17,13 +17,14 @@ namespace UI
         public MainMenu()
         {
             InitializeComponent();
+            btnQuit.Click += btnQuit_Click;
         }
 
         private void btnViewTickets_Click(object sender, EventArgs e)
         {
             // Navigate to ViewTicketsForm (create this form if it doesn't exist yet)
             ViewTickets viewTicketsForm = new ViewTickets();
-            viewTicketsForm.StartPosition = FormStartPosition.CenterScreen; 
+            viewTicketsForm.StartPosition = FormStartPosition.CenterScreen;
             viewTicketsForm.Show();
             this.Hide();
         }
@@ -74,9 +75,24 @@ namespace UI
 
             return currentUser;
         }
+
         private void MainMenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to quit?", "Exit Application",
+                                         MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Exit the entire application
+            }
         }
     }
 }
