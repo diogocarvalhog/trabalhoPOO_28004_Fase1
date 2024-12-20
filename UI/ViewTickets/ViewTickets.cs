@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ----------------------------------------------------------------------
+// Student: Diogo Graça
+// Email: a28004@alunos.ipca.pt
+// 
+// This class handles the functionality of viewing the user's tickets in the application.
+// It connects to the database to fetch the user's ticket information and displays it in a DataGridView.
+// 
+// Methods:
+// - InitializeDataGridView: Sets up the DataGridView columns to display concert details.
+// - LoadUserTickets: Loads the tickets for the logged-in user from the database.
+// - btnBack_Click: Handles the back button click event, navigating the user to the main menu.
+// ----------------------------------------------------------------------
+
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -8,6 +21,12 @@ namespace UI
 {
     public partial class ViewTickets : Form
     {
+        #region Constructors
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ViewTickets"/> class.
+        /// Sets up the button event handlers and loads the user's tickets.
+        /// </summary>
         public ViewTickets()
         {
             InitializeComponent();
@@ -15,6 +34,14 @@ namespace UI
             LoadUserTickets();
         }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Handles the form load event.
+        /// Initializes the DataGridView and loads the user's tickets.
+        /// </summary>
         private void ViewTickets_Load()
         {
             // Setup columns before loading data
@@ -22,10 +49,11 @@ namespace UI
 
             // Load user's tickets
             LoadUserTickets();
-
         }
 
-        // Method to initialize DataGridView columns
+        /// <summary>
+        /// Initializes the columns of the DataGridView to display concert information.
+        /// </summary>
         private void InitializeDataGridView()
         {
             dgvTickets.Columns.Clear(); // Clear existing columns if any
@@ -41,7 +69,10 @@ namespace UI
             dgvTickets.Columns["Price"].DefaultCellStyle.Format = "C"; // Format as currency
         }
 
-        // Method to load the user's tickets from the database
+        /// <summary>
+        /// Loads the tickets for the logged-in user from the database.
+        /// Displays the data in the DataGridView.
+        /// </summary>
         private void LoadUserTickets()
         {
             // Assuming LoginVariables.email has the current logged-in user's email
@@ -78,6 +109,10 @@ namespace UI
                 con.Close();
             }
         }
+
+        /// <summary>
+        /// Handles the back button click event. Navigates the user to the main menu.
+        /// </summary>
         private void btnBack_Click(object sender, EventArgs e)
         {
             // Create an instance of the main menu form (assuming it's called MainMenuForm)
@@ -88,21 +123,17 @@ namespace UI
             this.Close();          // Close the current form
             mainMenuForm.Show();   // Show the Main Menu form
         }
-        // Optional: You can add logic here to handle when a user clicks on a ticket row
+
+        /// <summary>
+        /// Optional: Handles when a user clicks on a ticket row in the DataGridView.
+        /// You can implement logic to show more ticket details or navigate to another form.
+        /// </summary>
         private void dgvTickets_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // You can implement actions when a user clicks on a ticket cell, for example:
-            // Show more ticket details or navigate to another form with additional information
+            // Implement actions when a user clicks on a ticket cell
+            // For example: Show more ticket details or navigate to another form with additional information
         }
 
-        private void ViewTickets_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBack_Click_1(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

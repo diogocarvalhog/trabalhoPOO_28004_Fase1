@@ -19,15 +19,28 @@ using System.Threading.Tasks;
 
 namespace ConcertManager
 {
-    // Create a class called Bands that inherits from Concerts
+    /// <summary>
+    /// Represents a band that performs concerts.
+    /// </summary>
     public class Bands
     {
+        #region Fields
+
         private string BandName { get; set; }
         private string Genre { get; set; }
         private string Members { get; set; }
         private List<Concerts> Concerts { get; set; }
 
-        // Create a constructor that takes in location, capacity, name, date, bandName, bandGenre, and bandMembers
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Bands"/> class.
+        /// </summary>
+        /// <param name="bandName">The name of the band.</param>
+        /// <param name="bandGenre">The genre of the band.</param>
+        /// <param name="bandMembers">The members of the band.</param>
         public Bands(string bandName, string bandGenre, string bandMembers)
         {
             this.BandName = bandName;
@@ -36,31 +49,53 @@ namespace ConcertManager
             this.Concerts = new List<Concerts>();
         }
 
-        // Create a property for bandName
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the band name.
+        /// </summary>
         public string bandName
         {
             get { return this.BandName; }
             set { this.BandName = value; }
         }
 
-        // Create a property for genre
+        /// <summary>
+        /// Gets or sets the genre of the band.
+        /// </summary>
         public string genre
         {
             get { return this.Genre; }
             set { this.Genre = value; }
         }
 
-        // Create a property for members
+        /// <summary>
+        /// Gets or sets the members of the band.
+        /// </summary>
         public string members
         {
             get { return this.Members; }
             set { this.Members = value; }
         }
+
+        /// <summary>
+        /// Gets the list of concerts for the band.
+        /// </summary>
         public List<Concerts> concerts
         {
             get { return this.Concerts; }
         }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Adds a concert to the band's concert list.
+        /// </summary>
+        /// <param name="concert">The concert to be added.</param>
         public void AddConcert(Concerts concert)
         {
             if (concert != null)
@@ -68,6 +103,11 @@ namespace ConcertManager
                 this.Concerts.Add(concert);
             }
         }
+
+        /// <summary>
+        /// Removes a concert from the band's concert list.
+        /// </summary>
+        /// <param name="concert">The concert to be removed.</param>
         public void RemoveConcert(Concerts concert)
         {
             if (concert != null && this.Concerts.Contains(concert))
@@ -75,5 +115,7 @@ namespace ConcertManager
                 this.Concerts.Remove(concert);
             }
         }
+
+        #endregion
     }
 }

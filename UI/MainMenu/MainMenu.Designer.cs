@@ -62,7 +62,6 @@
             btnQuit.TabIndex = 2;
             btnQuit.Text = "Quit App";
             btnQuit.UseVisualStyleBackColor = true;
-            btnQuit.Click += button1_Click;
             // 
             // MainMenu
             // 

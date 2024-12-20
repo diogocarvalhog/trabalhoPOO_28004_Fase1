@@ -129,7 +129,6 @@
             txtPass.PasswordChar = '*';
             txtPass.Size = new Size(191, 23);
             txtPass.TabIndex = 8;
-            txtPass.TextChanged += textBox2_TextChanged;
             // 
             // linkLabel2
             // 
