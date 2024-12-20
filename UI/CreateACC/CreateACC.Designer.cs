@@ -1,6 +1,6 @@
 ﻿namespace UI
 {
-    partial class Form2
+    partial class CreateACC
     {
         /// <summary>
         /// Required designer variable.
@@ -119,7 +119,7 @@
             label3.TabIndex = 7;
             label3.Text = "Confirm Password";
             // 
-            // Form2
+            // CreateACC
             // 
             AcceptButton = button1;
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -134,8 +134,9 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
-            Name = "Form2";
+            Name = "CreateACC";
             Text = "Create Account";
+            Load += CreateACC_Load;
             ResumeLayout(false);
             PerformLayout();
         }
