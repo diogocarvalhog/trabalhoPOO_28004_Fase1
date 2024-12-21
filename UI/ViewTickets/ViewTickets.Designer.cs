@@ -37,18 +37,20 @@
             // dgvTickets
             // 
             dgvTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTickets.Location = new Point(107, 98);
+            dgvTickets.Location = new Point(58, 46);
+            dgvTickets.Margin = new Padding(2, 1, 2, 1);
             dgvTickets.Name = "dgvTickets";
             dgvTickets.RowHeadersWidth = 82;
-            dgvTickets.Size = new Size(884, 817);
+            dgvTickets.Size = new Size(476, 383);
             dgvTickets.TabIndex = 0;
             dgvTickets.CellContentClick += dgvTickets_CellContentClick;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(690, 996);
+            btnBack.Location = new Point(372, 467);
+            btnBack.Margin = new Padding(2, 1, 2, 1);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(171, 46);
+            btnBack.Size = new Size(92, 22);
             btnBack.TabIndex = 1;
             btnBack.Text = "Back to Menu";
             btnBack.UseVisualStyleBackColor = true;
@@ -61,15 +63,15 @@
             // 
             // ViewTickets
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PapayaWhip;
-            ClientSize = new Size(1086, 1089);
+            ClientSize = new Size(585, 497);
             Controls.Add(btnBack);
             Controls.Add(dgvTickets);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "ViewTickets";
             Text = "Form1";
-            Load += ViewTickets_Load_1;
             ((System.ComponentModel.ISupportInitialize)dgvTickets).EndInit();
             ResumeLayout(false);
         }
