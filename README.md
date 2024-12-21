@@ -16,4 +16,4 @@ Este repositório contém o projeto da Fase 1 da disciplina de Programação Ori
 ## Como Executar
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/diogocarvalhog/trabalhoPOO_28004_Fase1.git
+   git clone https://github.com/diogocarvalhog/trabalhoPOO_28004_Fase2.git
